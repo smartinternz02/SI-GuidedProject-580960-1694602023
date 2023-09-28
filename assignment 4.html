@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>b9bc273a24d14185b5b0ba4e7b7ba9e2</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell code" id="XPVVPRBgEmTA">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div class="cell markdown" id="Bj4O3HsrEnQa">
+<p><strong>NAME: V GOWTHAM</strong> 21bcb7023 assignment 4</p>
+</div>
+<div class="cell markdown" id="JJNM3w2VEnmB">
+
+</div>
+<div class="cell markdown" id="7yCZiSq2EoAl">
+
+</div>
+<div class="cell code" id="hPSVkf_IEoi_">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> LabelEncoder</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.tree <span class="im">import</span> DecisionTreeClassifier</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score, classification_report, confusion_matrix</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code></pre></div>
+</div>
+<section id="new-section" class="cell markdown" id="bRSK8u8RNXEn">
+<h1>New Section</h1>
+</section>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:73}"
+id="dzsljaE9ErbP" data-outputId="39c716cb-5f08-4d46-9229-47ca69081299">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> google.colab <span class="im">import</span> files</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>uploaded <span class="op">=</span> files.upload()</span></code></pre></div>
+<div class="output display_data">
+
+     <input type="file" id="files-f604bf37-6cc8-4995-82e3-528c7d61db5b" name="files[]" multiple disabled
+        style="border:none" />
+     <output id="result-f604bf37-6cc8-4995-82e3-528c7d61db5b">
+      Upload widget is only available when the cell has been executed in the
+      current browser session. Please rerun this cell to enable.
+      </output>
+      <script>// Copyright 2017 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+/**
+ * @fileoverview Helpers for google.colab Python module.
+ */
+(function(scope) {
+function span(text, styleAttributes = {}) {
+  const element = document.createElement('span');
+  element.textContent = text;
+  for (const key of Object.keys(styleAttributes)) {
+    element.style[key] = styleAttributes[key];
+  }
+  return element;
+}
+
+// Max number of bytes which will be uploaded at a time.
+const MAX_PAYLOAD_SIZE = 100 * 1024;
+
+function _uploadFiles(inputId, outputId) {
+  const steps = uploadFilesStep(inputId, outputId);
+  const outputElement = document.getElementById(outputId);
+  // Cache steps on the outputElement to make it available for the next call
+  // to uploadFilesContinue from Python.
+  outputElement.steps = steps;
+
+  return _uploadFilesContinue(outputId);
+}
+
+// This is roughly an async generator (not supported in the browser yet),
+// where there are multiple asynchronous steps and the Python side is going
+// to poll for completion of each step.
+// This uses a Promise to block the python side on completion of each step,
+// then passes the result of the previous step as the input to the next step.
+function _uploadFilesContinue(outputId) {
+  const outputElement = document.getElementById(outputId);
+  const steps = outputElement.steps;
+
+  const next = steps.next(outputElement.lastPromiseValue);
+  return Promise.resolve(next.value.promise).then((value) => {
+    // Cache the last promise value to make it available to the next
+    // step of the generator.
+    outputElement.lastPromiseValue = value;
+    return next.value.response;
+  });
+}
+
+/**
+ * Generator function which is called between each async step of the upload
+ * process.
+ * @param {string} inputId Element ID of the input file picker element.
+ * @param {string} outputId Element ID of the output display.
+ * @return {!Iterable<!Object>} Iterable of next steps.
+ */
+function* uploadFilesStep(inputId, outputId) {
+  const inputElement = document.getElementById(inputId);
+  inputElement.disabled = false;
+
+  const outputElement = document.getElementById(outputId);
+  outputElement.innerHTML = '';
+
+  const pickedPromise = new Promise((resolve) => {
+    inputElement.addEventListener('change', (e) => {
+      resolve(e.target.files);
+    });
+  });
+
+  const cancel = document.createElement('button');
+  inputElement.parentElement.appendChild(cancel);
+  cancel.textContent = 'Cancel upload';
+  const cancelPromise = new Promise((resolve) => {
+    cancel.onclick = () => {
+      resolve(null);
+    };
+  });
+
+  // Wait for the user to pick the files.
+  const files = yield {
+    promise: Promise.race([pickedPromise, cancelPromise]),
+    response: {
+      action: 'starting',
+    }
+  };
+
+  cancel.remove();
+
+  // Disable the input element since further picks are not allowed.
+  inputElement.disabled = true;
+
+  if (!files) {
+    return {
+      response: {
+        action: 'complete',
+      }
+    };
+  }
+
+  for (const file of files) {
+    const li = document.createElement('li');
+    li.append(span(file.name, {fontWeight: 'bold'}));
+    li.append(span(
+        `(${file.type || 'n/a'}) - ${file.size} bytes, ` +
+        `last modified: ${
+            file.lastModifiedDate ? file.lastModifiedDate.toLocaleDateString() :
+                                    'n/a'} - `));
+    const percent = span('0% done');
+    li.appendChild(percent);
+
+    outputElement.appendChild(li);
+
+    const fileDataPromise = new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        resolve(e.target.result);
+      };
+      reader.readAsArrayBuffer(file);
+    });
+    // Wait for the data to be ready.
+    let fileData = yield {
+      promise: fileDataPromise,
+      response: {
+        action: 'continue',
+      }
+    };
+
+    // Use a chunked sending to avoid message size limits. See b/62115660.
+    let position = 0;
+    do {
+      const length = Math.min(fileData.byteLength - position, MAX_PAYLOAD_SIZE);
+      const chunk = new Uint8Array(fileData, position, length);
+      position += length;
+
+      const base64 = btoa(String.fromCharCode.apply(null, chunk));
+      yield {
+        response: {
+          action: 'append',
+          file: file.name,
+          data: base64,
+        },
+      };
+
+      let percentDone = fileData.byteLength === 0 ?
+          100 :
+          Math.round((position / fileData.byteLength) * 100);
+      percent.textContent = `${percentDone}% done`;
+
+    } while (position < fileData.byteLength);
+  }
+
+  // All done.
+  yield {
+    response: {
+      action: 'complete',
+    }
+  };
+}
+
+scope.google = scope.google || {};
+scope.google.colab = scope.google.colab || {};
+scope.google.colab._files = {
+  _uploadFiles,
+  _uploadFilesContinue,
+};
+})(self);
+</script> 
+</div>
+<div class="output stream stdout">
+<pre><code>Saving EmployeeAttrition.csv to EmployeeAttrition (1).csv
+</code></pre>
+</div>
+</div>
+<div class="cell code" id="rsgxilcgE2by">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">&quot;EmployeeAttrition.csv&quot;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(file_path)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="75XyBurwFQx6" data-outputId="3870c103-0efd-4328-def2-fe74956827ca">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming you have already loaded your CSV file into a DataFrame named &#39;df&#39;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check if columns exist and drop them</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>columns_to_drop <span class="op">=</span> [<span class="st">&#39;EmployeeNumber&#39;</span>, <span class="st">&#39;EmployeeCount&#39;</span>, <span class="st">&#39;StandardHours&#39;</span>, <span class="st">&#39;Over18&#39;</span>]</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean column names by stripping leading/trailing spaces</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> df.columns.<span class="bu">str</span>.strip()</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop columns if they exist</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>columns_to_drop_existing <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> columns_to_drop <span class="cf">if</span> col <span class="kw">in</span> df.columns]</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> columns_to_drop_existing:</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    df.drop(columns<span class="op">=</span>columns_to_drop_existing, axis<span class="op">=</span><span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Dropped columns:&quot;</span>, columns_to_drop_existing)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;No columns to drop were found in the DataFrame.&quot;</span>)</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the modified DataFrame</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>No columns to drop were found in the DataFrame.
+      Age Attrition     BusinessTravel  DailyRate              Department  \
+0      41       Yes      Travel_Rarely       1102                   Sales   
+1      49        No  Travel_Frequently        279  Research &amp; Development   
+2      37       Yes      Travel_Rarely       1373  Research &amp; Development   
+3      33        No  Travel_Frequently       1392  Research &amp; Development   
+4      27        No      Travel_Rarely        591  Research &amp; Development   
+...   ...       ...                ...        ...                     ...   
+1465   36        No  Travel_Frequently        884  Research &amp; Development   
+1466   39        No      Travel_Rarely        613  Research &amp; Development   
+1467   27        No      Travel_Rarely        155  Research &amp; Development   
+1468   49        No  Travel_Frequently       1023                   Sales   
+1469   34        No      Travel_Rarely        628  Research &amp; Development   
+
+      DistanceFromHome  Education EducationField  EnvironmentSatisfaction  \
+0                    1          2  Life Sciences                        2   
+1                    8          1  Life Sciences                        3   
+2                    2          2          Other                        4   
+3                    3          4  Life Sciences                        4   
+4                    2          1        Medical                        1   
+...                ...        ...            ...                      ...   
+1465                23          2        Medical                        3   
+1466                 6          1        Medical                        4   
+1467                 4          3  Life Sciences                        2   
+1468                 2          3        Medical                        4   
+1469                 8          3        Medical                        2   
+
+      Gender  ...  PerformanceRating  RelationshipSatisfaction  \
+0     Female  ...                  3                         1   
+1       Male  ...                  4                         4   
+2       Male  ...                  3                         2   
+3     Female  ...                  3                         3   
+4       Male  ...                  3                         4   
+...      ...  ...                ...                       ...   
+1465    Male  ...                  3                         3   
+1466    Male  ...                  3                         1   
+1467    Male  ...                  4                         2   
+1468    Male  ...                  3                         4   
+1469    Male  ...                  3                         1   
+
+      StockOptionLevel TotalWorkingYears  TrainingTimesLastYear  \
+0                    0                 8                      0   
+1                    1                10                      3   
+2                    0                 7                      3   
+3                    0                 8                      3   
+4                    1                 6                      3   
+...                ...               ...                    ...   
+1465                 1                17                      3   
+1466                 1                 9                      5   
+1467                 1                 6                      0   
+1468                 0                17                      3   
+1469                 0                 6                      3   
+
+     WorkLifeBalance  YearsAtCompany  YearsInCurrentRole  \
+0                  1               6                   4   
+1                  3              10                   7   
+2                  3               0                   0   
+3                  3               8                   7   
+4                  3               2                   2   
+...              ...             ...                 ...   
+1465               3               5                   2   
+1466               3               7                   7   
+1467               3               6                   2   
+1468               2               9                   6   
+1469               4               4                   3   
+
+      YearsSinceLastPromotion YearsWithCurrManager  
+0                           0                    5  
+1                           1                    7  
+2                           0                    0  
+3                           3                    0  
+4                           2                    2  
+...                       ...                  ...  
+1465                        0                    3  
+1466                        1                    7  
+1467                        0                    3  
+1468                        0                    8  
+1469                        1                    2  
+
+[1470 rows x 31 columns]
+</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="uF5VfXikFaTm" data-outputId="179b2a6f-e172-4149-e780-72112c08501a">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming you have already loaded your CSV file into a DataFrame named &#39;df&#39;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> LabelEncoder</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize the LabelEncoder</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>le <span class="op">=</span> LabelEncoder()</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Select the categorical columns in the DataFrame</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>categorical_columns <span class="op">=</span> df.select_dtypes(include<span class="op">=</span>[<span class="st">&#39;object&#39;</span>]).columns</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply LabelEncoder to each categorical column</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> categorical_columns:</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    df[col] <span class="op">=</span> le.fit_transform(df[col])</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the modified DataFrame with encoded categorical values</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>      Age  Attrition  BusinessTravel  DailyRate  Department  DistanceFromHome  \
+0      41          1               2       1102           2                 1   
+1      49          0               1        279           1                 8   
+2      37          1               2       1373           1                 2   
+3      33          0               1       1392           1                 3   
+4      27          0               2        591           1                 2   
+...   ...        ...             ...        ...         ...               ...   
+1465   36          0               1        884           1                23   
+1466   39          0               2        613           1                 6   
+1467   27          0               2        155           1                 4   
+1468   49          0               1       1023           2                 2   
+1469   34          0               2        628           1                 8   
+
+      Education  EducationField  EnvironmentSatisfaction  Gender  ...  \
+0             2               1                        2       0  ...   
+1             1               1                        3       1  ...   
+2             2               4                        4       1  ...   
+3             4               1                        4       0  ...   
+4             1               3                        1       1  ...   
+...         ...             ...                      ...     ...  ...   
+1465          2               3                        3       1  ...   
+1466          1               3                        4       1  ...   
+1467          3               1                        2       1  ...   
+1468          3               3                        4       1  ...   
+1469          3               3                        2       1  ...   
+
+      PerformanceRating  RelationshipSatisfaction  StockOptionLevel  \
+0                     3                         1                 0   
+1                     4                         4                 1   
+2                     3                         2                 0   
+3                     3                         3                 0   
+4                     3                         4                 1   
+...                 ...                       ...               ...   
+1465                  3                         3                 1   
+1466                  3                         1                 1   
+1467                  4                         2                 1   
+1468                  3                         4                 0   
+1469                  3                         1                 0   
+
+      TotalWorkingYears  TrainingTimesLastYear  WorkLifeBalance  \
+0                     8                      0                1   
+1                    10                      3                3   
+2                     7                      3                3   
+3                     8                      3                3   
+4                     6                      3                3   
+...                 ...                    ...              ...   
+1465                 17                      3                3   
+1466                  9                      5                3   
+1467                  6                      0                3   
+1468                 17                      3                2   
+1469                  6                      3                4   
+
+      YearsAtCompany  YearsInCurrentRole  YearsSinceLastPromotion  \
+0                  6                   4                        0   
+1                 10                   7                        1   
+2                  0                   0                        0   
+3                  8                   7                        3   
+4                  2                   2                        2   
+...              ...                 ...                      ...   
+1465               5                   2                        0   
+1466               7                   7                        1   
+1467               6                   2                        0   
+1468               9                   6                        0   
+1469               4                   3                        1   
+
+      YearsWithCurrManager  
+0                        5  
+1                        7  
+2                        0  
+3                        0  
+4                        2  
+...                    ...  
+1465                     3  
+1466                     7  
+1467                     3  
+1468                     8  
+1469                     2  
+
+[1470 rows x 31 columns]
+</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="0f_Z9LXyIamY" data-outputId="b8c9ac73-6a13-4f56-98af-9ac12b5dc21f">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming you have already loaded your CSV file into a DataFrame named &#39;df&#39;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the feature matrix X by dropping the &#39;Attrition&#39; column</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df.drop(<span class="st">&#39;Attrition&#39;</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the target variable y</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df[<span class="st">&#39;Attrition&#39;</span>]</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Print X and y to verify</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Feature matrix X:&quot;</span>)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X.head())  <span class="co"># Display the first few rows of X</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Target variable y:&quot;</span>)</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y.head())  <span class="co"># Display the first few rows of y</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Feature matrix X:
+   Age  BusinessTravel  DailyRate  Department  DistanceFromHome  Education  \
+0   41               2       1102           2                 1          2   
+1   49               1        279           1                 8          1   
+2   37               2       1373           1                 2          2   
+3   33               1       1392           1                 3          4   
+4   27               2        591           1                 2          1   
+
+   EducationField  EnvironmentSatisfaction  Gender  HourlyRate  ...  \
+0               1                        2       0          94  ...   
+1               1                        3       1          61  ...   
+2               4                        4       1          92  ...   
+3               1                        4       0          56  ...   
+4               3                        1       1          40  ...   
+
+   PerformanceRating  RelationshipSatisfaction  StockOptionLevel  \
+0                  3                         1                 0   
+1                  4                         4                 1   
+2                  3                         2                 0   
+3                  3                         3                 0   
+4                  3                         4                 1   
+
+   TotalWorkingYears  TrainingTimesLastYear  WorkLifeBalance  YearsAtCompany  \
+0                  8                      0                1               6   
+1                 10                      3                3              10   
+2                  7                      3                3               0   
+3                  8                      3                3               8   
+4                  6                      3                3               2   
+
+   YearsInCurrentRole  YearsSinceLastPromotion  YearsWithCurrManager  
+0                   4                        0                     5  
+1                   7                        1                     7  
+2                   0                        0                     0  
+3                   7                        3                     0  
+4                   2                        2                     2  
+
+[5 rows x 30 columns]
+
+Target variable y:
+0    1
+1    0
+2    1
+3    0
+4    0
+Name: Attrition, dtype: int64
+</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="kThp3-pcIpUw" data-outputId="0b643479-9370-415e-b8e8-34e2cbbf63c6">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the train_test_split function from scikit-learn</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Split the data into training and testing sets</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the shapes of the resulting sets to verify</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;X_train shape:&quot;</span>, X_train.shape)</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;X_test shape:&quot;</span>, X_test.shape)</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;y_train shape:&quot;</span>, y_train.shape)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;y_test shape:&quot;</span>, y_test.shape)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>X_train shape: (1176, 30)
+X_test shape: (294, 30)
+y_train shape: (1176,)
+y_test shape: (294,)
+</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:213}"
+id="VScF85SbI14v" data-outputId="731de48f-6740-4d97-8e8e-13401b608266">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the LogisticRegression class from scikit-learn</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a LogisticRegression model</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>logistic_regression_model <span class="op">=</span> LogisticRegression()</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the model to the training data</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>logistic_regression_model.fit(X_train, y_train)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>/usr/local/lib/python3.10/dist-packages/sklearn/linear_model/_logistic.py:458: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="17">
+<style>#sk-container-id-3 {color: black;background-color: white;}#sk-container-id-3 pre{padding: 0;}#sk-container-id-3 div.sk-toggleable {background-color: white;}#sk-container-id-3 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-3 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-3 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-3 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-3 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-3 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-3 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-3 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-3 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-3 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-3 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-3 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-3 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-3 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-3 div.sk-item {position: relative;z-index: 1;}#sk-container-id-3 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-3 div.sk-item::before, #sk-container-id-3 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-3 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-3 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-3 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-3 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-3 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-3 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-3 div.sk-label-container {text-align: center;}#sk-container-id-3 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-3 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LogisticRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" checked><label for="sk-estimator-id-3" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression()</pre></div></div></div></div></div>
+</div>
+</div>
+<div class="cell code" id="tuPul8EJJCZV">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>logistic_regression_predictions <span class="op">=</span> logistic_regression_model.predict(X_test)</span></code></pre></div>
+</div>
+<div class="cell code" id="XJpjOFuHKaTA">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>logistic_regression_accuracy <span class="op">=</span> accuracy_score(y_test, logistic_regression_predictions)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>logistic_regression_classification_report <span class="op">=</span> classification_report(y_test, logistic_regression_predictions)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>logistic_regression_confusion_matrix <span class="op">=</span> confusion_matrix(y_test, logistic_regression_predictions)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:74}"
+id="V1lAAUUqKe17" data-outputId="e3e37cc8-a2fc-4606-ae36-4e3cc569093e">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>decision_tree_model <span class="op">=</span> DecisionTreeClassifier(random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>decision_tree_model.fit(X_train, y_train)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="20">
+<style>#sk-container-id-4 {color: black;background-color: white;}#sk-container-id-4 pre{padding: 0;}#sk-container-id-4 div.sk-toggleable {background-color: white;}#sk-container-id-4 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-4 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-4 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-4 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-4 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-4 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-4 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-4 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-4 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-4 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-4 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-4 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-4 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-4 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-4 div.sk-item {position: relative;z-index: 1;}#sk-container-id-4 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-4 div.sk-item::before, #sk-container-id-4 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-4 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-4 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-4 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-4 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-4 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-4 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-4 div.sk-label-container {text-align: center;}#sk-container-id-4 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-4 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-4" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>DecisionTreeClassifier(random_state=42)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" checked><label for="sk-estimator-id-4" class="sk-toggleable__label sk-toggleable__label-arrow">DecisionTreeClassifier</label><div class="sk-toggleable__content"><pre>DecisionTreeClassifier(random_state=42)</pre></div></div></div></div></div>
+</div>
+</div>
+<div class="cell code" id="W4e8G_XEKkcw">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>decision_tree_predictions <span class="op">=</span> decision_tree_model.predict(X_test)</span></code></pre></div>
+</div>
+<div class="cell code" id="gknP-c__Ko_x">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>decision_tree_accuracy <span class="op">=</span> accuracy_score(y_test, decision_tree_predictions)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>decision_tree_classification_report <span class="op">=</span> classification_report(y_test, decision_tree_predictions)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>decision_tree_confusion_matrix <span class="op">=</span> confusion_matrix(y_test, decision_tree_predictions)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="9sIbFdgiK2X8" data-outputId="b0e9c082-1c6d-4120-981c-d5b5d467f481">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Logistic Regression Performance Metrics:&quot;</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Accuracy: </span><span class="sc">{</span>logistic_regression_accuracy<span class="sc">:.2f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Classification Report:</span><span class="ch">\n</span><span class="st">&quot;</span>, logistic_regression_classification_report)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Confusion Matrix:</span><span class="ch">\n</span><span class="st">&quot;</span>, logistic_regression_confusion_matrix)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Logistic Regression Performance Metrics:
+Accuracy: 0.86
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.87      0.99      0.92       255
+           1       0.00      0.00      0.00        39
+
+    accuracy                           0.86       294
+   macro avg       0.43      0.49      0.46       294
+weighted avg       0.75      0.86      0.80       294
+
+Confusion Matrix:
+ [[252   3]
+ [ 39   0]]
+</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="LT-X3JsBK7qK" data-outputId="7be371d8-5d80-4689-8acf-1015c31afbb7">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Decision Tree Performance Metrics:&quot;</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Accuracy: </span><span class="sc">{</span>decision_tree_accuracy<span class="sc">:.2f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Classification Report:</span><span class="ch">\n</span><span class="st">&quot;</span>, decision_tree_classification_report)</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Confusion Matrix:</span><span class="ch">\n</span><span class="st">&quot;</span>, decision_tree_confusion_matrix)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+Decision Tree Performance Metrics:
+Accuracy: 0.80
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.88      0.89      0.88       255
+           1       0.24      0.23      0.23        39
+
+    accuracy                           0.80       294
+   macro avg       0.56      0.56      0.56       294
+weighted avg       0.80      0.80      0.80       294
+
+Confusion Matrix:
+ [[226  29]
+ [ 30   9]]
+</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:427}"
+id="dq3H1qXmLBQj" data-outputId="0470f893-91db-4949-907d-a97e9cd01486">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">4</span>))</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Logistic Regression Confusion Matrix&quot;</span>)</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>plt.imshow(logistic_regression_confusion_matrix, cmap<span class="op">=</span><span class="st">&#39;Blues&#39;</span>, interpolation<span class="op">=</span><span class="st">&#39;nearest&#39;</span>, aspect<span class="op">=</span><span class="st">&#39;auto&#39;</span>)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>plt.colorbar()</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>plt.xticks([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="st">&#39;No Attrition&#39;</span>, <span class="st">&#39;Attrition&#39;</span>])</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>plt.yticks([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="st">&#39;No Attrition&#39;</span>, <span class="st">&#39;Attrition&#39;</span>])</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Predicted&#39;</span>)</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Actual&#39;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="25">
+<pre><code>Text(0, 0.5, &#39;Actual&#39;)</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_867267d3ee8c4c1491cee35a9a0df441/d706f5af78114127853598247ded544bf0de30b1.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:489}"
+id="H2-oeNZZLFYJ" data-outputId="dfdff2cc-f3b8-4719-f76e-cb5b47931d70">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Decision Tree Confusion Matrix&quot;</span>)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>plt.imshow(decision_tree_confusion_matrix, cmap<span class="op">=</span><span class="st">&#39;Blues&#39;</span>, interpolation<span class="op">=</span><span class="st">&#39;nearest&#39;</span>, aspect<span class="op">=</span><span class="st">&#39;auto&#39;</span>)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>plt.colorbar()</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>plt.xticks([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="st">&#39;No Attrition&#39;</span>, <span class="st">&#39;Attrition&#39;</span>])</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>plt.yticks([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="st">&#39;No Attrition&#39;</span>, <span class="st">&#39;Attrition&#39;</span>])</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Predicted&#39;</span>)</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Actual&#39;</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="26">
+<pre><code>Text(0, 0.5, &#39;Actual&#39;)</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_867267d3ee8c4c1491cee35a9a0df441/0dd622bb800e23bebfc0f884513249cc08a99710.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:34}"
+id="TereV3M7LNpo" data-outputId="72df11c2-d10b-4b59-8f0a-b155afe5ceb4">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<pre><code>&lt;Figure size 640x480 with 0 Axes&gt;</code></pre>
+</div>
+</div>
+<div class="cell code" id="iSnBpU3rLRnd">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+</body>
+</html>
